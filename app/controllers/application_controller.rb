@@ -38,4 +38,8 @@ class ApplicationController < Sinatra::Base
     # @post = params[:id])
     erb :'edit'
   end
+
+  patch '/posts/1' do
+    
+  end
 end
