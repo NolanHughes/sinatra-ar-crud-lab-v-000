@@ -35,7 +35,6 @@ class ApplicationController < Sinatra::Base
 
   get '/posts/:id/edit' do
     @post_id = params[:id]
-    # @post = params[:id])
     erb :'edit'
   end
 
