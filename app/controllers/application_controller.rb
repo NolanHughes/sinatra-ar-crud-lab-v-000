@@ -34,7 +34,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts/:id/edit' do
-    binding.pry
     @post = Post.find_by(2)
     erb :'edit'
   end
