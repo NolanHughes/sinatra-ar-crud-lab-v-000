@@ -3,7 +3,6 @@
 <h2>Blog Name: <%= @post.name %></h2>
 <p>Blog Content: <%= @post.content %></p>
 
-
 <form action="/posts/<%= @post.id %>" method="POST">
   <input id="hidden" type="hidden" name="_method" value="DELETE">
   <input type="submit" value="delete">
