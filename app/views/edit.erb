@@ -1,15 +1,10 @@
-<h2>Dumbest way to have to display a name: <%= @post.name %></h2>
-<h2>Dumbest way to have to display content: <%= @post.content %></h2>
-
-
 <form action="/posts/<%= @post.id %>" method="post">
-
     <input id="hidden" type="hidden" name="_method" value="patch">
     <label for="name">Name:</label>
-    <input type="text" id="name" name="name" />
+    <input type="text" id="name" name="name" value="<%="#{@post.name}"%>" />
 
     <label for="content">Content</label>
-    <input type="text" id="content" name="content" />
+    <input type="text" id="content" name="content" value="<%="#{@post.content}"%>" />
 
     <input type="submit" value="submit"/>
 </form>
