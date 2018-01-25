@@ -1,3 +1,6 @@
+<h1>Selected Post: <%= @post.name %></h1>
+<p>Content: <%= @post.content %></p>
+
 <form action="/posts/<%= @post.id %>" method="post">
     <input id="hidden" type="hidden" name="_method" value="patch">
     <label for="name">Name:</label>
