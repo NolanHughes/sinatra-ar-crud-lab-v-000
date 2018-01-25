@@ -28,7 +28,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/posts/:id' do
-    @post = Post.find_by(params[:id])
+    @post = Post.find_(params[:id])
 
     erb :'show'
   end
@@ -45,7 +45,7 @@ class ApplicationController < Sinatra::Base
   end
 
   delete '/posts/:id/delete' do
-    
+    @post = 
   end
 
 end
