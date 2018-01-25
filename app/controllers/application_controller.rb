@@ -40,6 +40,6 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/posts/1' do
-    
+    erb :'show'
   end
 end
